@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+   <title> Quiz | CACCF</title>
+<style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  width: 25%;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  margin-top: -50%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #007bff;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+  padding: 5px 2px;
+  text-align: center;
+}
+.text:active{
+  background-color: white;
+  color: #007bff;
+}
+h3, h4{
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+ <h4>Hello My Wonderful Prayer Warrior, <br /> I've prepared a simple quiz for you. Click on the image to reveal the link!</h4>
+
+<div class="container">
+  <img src="img.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text" onclick="document.location='quiz.html'">Take Quiz</div>
+  </div>
+<h3>Please remember to send me the screenshot of your score to claim your reward!</h3>
+</div>
+  
+</body>
+</html>
